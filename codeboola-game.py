@@ -1,21 +1,21 @@
 import random
 
 class Player(object):
-	hp = 100
+	max_hp = 100
 	current_hp = 100
 	
 	def is_alive(self):
-		return self.hp > 0
+		return self.max_hp > 0
 	
 	def successful_attack(self):
 		rand = random.random()
 		return rand < self.accuracy
 	
 	def rest(self):
-		if(self.current_hp < self.hp):
+		if(self.current_hp < self.max_hp):
 			self.current_hp += self.heal
-			if(self.current_hp > self.hp):
-				self.current_hp = self.hp
+			if(self.current_hp > self.max_hp):
+				self.current_hp = self.max_hp
 			print("You healed yourself!")
 		else:
 			print("You are already at full health!")
@@ -33,7 +33,7 @@ class Player(object):
 		print("Every time you heal yourself, you heal " + str(self.heal) + " health")
 		
 	def kill(self):
-		self.hp = 0
+		self.max_hp = 0
 
 
 class Archer(Player):
