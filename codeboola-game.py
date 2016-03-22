@@ -84,11 +84,11 @@ def fight(player, enemy):
 	while(player.is_alive() and enemy.is_alive()):
 		player.print_current_health()
 		enemy.print_current_health()
-		move = raw_input("What is your move? ")
+		move = input("What is your move? ")
 		print("")
 		while(move != "a" and move != "h"):
 			print("Press a to attack, press h to heal\n")
-			move = raw_input("What is your move? ")
+			move = input("What is your move? ")
 			print("")
 	
 		if(move == "a"):
@@ -108,13 +108,13 @@ def fight(player, enemy):
 
 	return player.is_alive
 
-name= raw_input("Hello! What's your name? ")
-player_class = raw_input("Hi " + name + "! What class of character would you want to be? ")
+name= input("Hello! What's your name? ")
+player_class = input("Hi " + name + "! What class of character would you want to be? ")
 player = None
 while(player_class != "a" and player_class != "s" and player_class != "h"):
 	print("")
 	print("Press a to be an archer, press s to be a swordsman, press h to be a healer")
-	player_class = raw_input("What class of character would you want to be? ")
+	player_class = input("What class of character would you want to be? ")
 	
 if(player_class == "a"):
 	player = Archer(name)
@@ -129,7 +129,7 @@ player.info()
 num_steps = 0
 print("\nYou are in a tunnel, and you must get out! It will take 10 steps to get out, but as you walk along you may encounter some spiders that you will need to fight. Good luck!\n")
 while(player.is_alive and num_steps < 10):
-	step = raw_input("What do you want to do? ")
+	step = input("What do you want to do? ")
 	print("")
 	if(step == "s"):
 		chance = random.random()
