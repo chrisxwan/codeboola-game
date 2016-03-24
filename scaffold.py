@@ -7,17 +7,21 @@ class Player(object):
 	# Check if the player is still alive 
 	# by ensuring that his current hp is greater than 0
 	def is_alive(self):
+		# Fill this in!
 
-	# Return True or False depending on whether the Plaeyer's
+	# Return True or False depending on whether the Player's
 	# attack was successful
 	def successful_attack(self):
+		# Fill this in!
 
 	# Heal the Player, if his health is not full already
 	def rest(self):
+		# Fill this in!
 
 	# The player has been damaged! Decrease the Player's
 	# current health by the appropriate amount
 	def damage(self, dmg):
+		# Fill this in!
 
 	def print_current_health(self):
 		print("You currently have " + str(self.current_hp) + " health.")
@@ -35,30 +39,37 @@ class Player(object):
 class Archer(Player):
 	# input the appropriate attributes for the Archer
 	def __init__(self, name):
+		# Fill this in!
 
 class Swordsman(Player):
 	# input the appropriate attributes for the Swordsman
 	def __init__(self, name):
+		# Fill this in!
 
 class Healer(Player):
 	# input the appropriate attributes for the Healer
 	def __init__(self, name):
+		# Fill this in!
 
 class GiantSpider():
 	# input the appropriate attributes for the Spider
 	def __init__(self):
+		# Fill this in!
 
 	# Check if the spider is still alive 
 	# by ensuring that its current hp is greater than 0
 	def is_alive(self):
+		# Fill this in!
 
 	# The player has been damaged! Decrease the Spider's
 	# current health by the appropriate amount
 	def damage(self, dmg):
+		# Fill this in!
 
 	# Return True or False depending on whether the Plaeyer's
 	# attack was successful
 	def successful_attack(self):
+		# Fill this in!
 
 	def print_current_health(self):
 		print("The enemy currently has " + str(self.hp) + " health.\n")
@@ -106,10 +117,13 @@ while(player_class != "a" and player_class != "s" and player_class != "h"):
 # Based on what the user has chosen, how should you 
 # initialize his/her character?
 if(player_class == "a"):
+	# Fill this in!
 
 elif(player_class == "s"):
+	# Fill this in!
 
 elif(player_class == "h"):
+	# Fill this in!
 
 print("")
 player.info()
