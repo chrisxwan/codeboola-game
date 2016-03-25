@@ -59,7 +59,6 @@ class Healer(Player):
 		self.accuracy=0.9
 		self.heal=10
 		self.attack=2
-		super(Healer, self).__init__(name, accuracy=0.9, heal = 10, attack = 2)
 
 class GiantSpider():
 	def __init__(self):
